@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">This is a paragraph.</p>
+    <button onclick="highlightText()">Highlight</button>
+
+    <script>
+        // Function to highlight text
+        function highlightText() {
+            document.getElementById('text').classList.toggle('highlight');
+        }
+    </script>
+</body>
+</html>
